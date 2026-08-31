@@ -4,7 +4,7 @@
     taille: 7.18 Go
     date téléchargement 29/07 10:38
 
-    Fait: télécharger le fichier, commencer la lecture des datas
+    ## Fait: télécharger le fichier, commencer la lecture des datas
         Réponses aux questions:
             1- 1.247.346 produits vendus en France
             2- 37,18% de ces produits ont un nutriscore renseignés
@@ -23,5 +23,30 @@
                 Nestlé           3341
             4- Le taux de manquant en energie, en sucre et en sel est : 30.22% ,  38.00% , 42.45%
             5- Parmi les données ci-dessus, les plus sales sont celles qui manquent de sel
-    Décidé : utiliser le format parquet
-    Bloqué: chargement des produits français
+    ## Décidé : utiliser le format parquet
+    ## Bloqué: chargement des produits français
+
+
+## 25/08/2026: Profiling et périmètre
+
+   ## Fait
+        - analyse des données
+        - choix des champs à garder
+        - choix des rayons couverts
+
+   ## Décidé
+        - choix de 5 rayons avec asssez de produits
+        - choix des champs qu'on garde, et taux de remplissage
+
+   ## Bloqué: non
+
+
+# 27/08/2026 : Git
+
+   ## Fait
+        - Création de branches propres dans GIT
+        - Exerices sur GIT
+
+   ## Décidé: rien a décider
+
+   ## Bloqué: aucun blocage
