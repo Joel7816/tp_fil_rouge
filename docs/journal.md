@@ -70,3 +70,18 @@
 * energy_kj_100g n'est pas stocké (absent de l'extrait nettoyé du périmètre) - On a gardé energy_kcal_100g
 
 ### Bloqué : Aucun blocage
+
+## 02/09/2026 : Atelier 1 — Cartographier une organisation réelle
+
+Choisissez un acteur réel de l'agroalimentaire (Lesieur, Bonduelle, un e-commerçant alimentaire, une enseigne de distribution…)
+À partir des informations publiques : esquissez son organigramme probable,
+ses fonctions clés, et le modèle d'organisation dominant
+Situez : où logerait une équipe IA ? Qui serait le sponsor d'un projet « score
+nutritionnel » chez eux ?
+Puis comparez avec NutriScope : quels rôles vos 2-3 fondateurs cumulent-ils ?
+
+#### Acteur choisi : Danone
+* Modèle d'organisation dominant => Organisation divisionnelle
+* Fonctions clés => COO, HR / Research & Innovation & Quality & Food Safety, Finance / Technology & Data, Geographies / Categories / Global marketing & Sales, Specialized nutrition, Secretary
+* Où logerait une équipe IA => Probablement dans un HUB centralisé car c'est une multinationale et il faut centraliser pour faciliter la gouvernance de certains équipes
+* Qui serait le sponsor d'un projet "score nutritionnel" chez eux ? Aucune idée
