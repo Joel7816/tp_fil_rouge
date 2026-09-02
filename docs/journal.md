@@ -50,3 +50,23 @@
    ## Décidé: rien a décider
 
    ## Bloqué: aucun blocage
+
+## 01/09/2026 : SQL - Construction de la base de données
+### Fait : 
+* Mise en place de l'infra dockerisée : docker-compose.yml (Postgres 16 + Adminer), .env.example, requirements.txt
+* Écriture de schema.sql (DDL des 6 tables : produits, marques, categories, nutriments, produits_marques, produits_categories) avec DROP en tête pour le rendre rejouable
+* Écriture de load_db.py : script de chargement idempotent depuis produits_perimetre_clean.parquet
+* Écriture de requetes_controle.sql (5 requêtes versionnées : volumétrie par table, produits sans catégorie, top marques, complétude Nutri-Score par rayon, doublons de codes-barres restants)
+* Écriture de build_clean_extract.py pour avoir un fichier nettoyé un peu plus que le fichier "france"
+* Création du fichier "proposition_schema.md" qui fait état des tables et jointures
+
+### Décidé : 
+* remettre au propre / réorganiser le dépôt pour que n'importe qui puisse rejouer les notebooks et autres scripts facilement
+* brands et categories_tags, tous deux multi-valués dans la donnée source, sont modélisés via des tables de liaison (produits_marques, produits_categories) plutôt que des colonnes texte, conformément à la consigne
+* Les noms de marque sont normalisés à la casse/espaces/& vs and près (fonction normalize_brand_key), avec le nom canonique = orthographe la plus fréquente par groupe
+* categories_tags est chargé tel quel en base, y compris les tags non-anglais : pas de filtrage au chargement, un futur usage précis (ex. features du modèle) filtrera à la demande plutôt que de subir un choix pris ici
+* nutriscore_grade reste stocké à côté de nutriscore_score (dénormalisation assumée malgré la dépendance transitive au sens de la 3FN), et les CHECK de plausibilité sur les nutriments sont conservés en base en plus du filtrage déjà fait en amont
+* produits.code est en TEXT (pas numérique, pour préserver les zéros de tête du code-barres) — pas de perte de performance en PostgreSQL par rapport à VARCHAR(n)
+* energy_kj_100g n'est pas stocké (absent de l'extrait nettoyé du périmètre) - On a gardé energy_kcal_100g
+
+### Bloqué : Aucun blocage

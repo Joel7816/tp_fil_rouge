@@ -34,7 +34,7 @@ Nutri-Score et `sodium_100g`, tous numériques.
 
 ## Normalisation
 
-Schéma en 1FN (tables de liaison pour `brands`/`categories_tags`, multi-valués), 2FN (les tables
-à clé composite ne portent aucune colonne hors clé) et 3FN à une exception assumée près :
+Schéma en 1NF (tables de liaison pour `brands`/`categories_tags`, multi-valués), 2NF (les tables
+à clé composite ne portent aucune colonne hors clé) et 3NF à une exception assumée près :
 `nutriscore_grade` dépend de `nutriscore_score` plutôt que directement de `code` — dénormalisation
 volontaire, gardée pour la performance de lecture plutôt que recalculée à la volée.
