@@ -32,9 +32,9 @@
  6. Quelles sont les informations indispensables pour vous ?
 
 
-## 4. Entretien réèl
+## 4. Entretien réel
 
-### 4.1. Interlotrice
+### 4.1. Interlocutrice
 
 Claire Delcourt - 43 ans
 **Fonction** | Directrice générale et cofondatrice de NutriScope
