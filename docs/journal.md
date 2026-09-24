@@ -5,24 +5,35 @@
     date téléchargement 29/07 10:38
 
     ## Fait: télécharger le fichier, commencer la lecture des datas
-        Réponses aux questions:
-            1- 1.247.346 produits vendus en France
-            2- 37,18% de ces produits ont un nutriscore renseignés
-            3- Le top 10 des marques sont (si on exclue les valeurs non renseignées):
-                brands      
-                                54688
-                Carrefour       12052
-                U               11974
-                Auchan           6291
-                Leader Price     5427
-                Casino           5119
-                Cora             3960
-                Le Gaulois       3548
-                Picard           3501
-                Monoprix         3399
-                Nestlé           3341
-            4- Le taux de manquant en energie, en sucre et en sel est : 30.22% ,  38.00% , 42.45%
-            5- Parmi les données ci-dessus, les plus sales sont celles qui manquent de sel
+        Réponses aux questions :
+            1- 1 259 443 produits vendus en France
+
+            2- 37,12 % de ces produits ont un Nutri-Score renseigné (grades a/b/c/d/e uniquement ;
+            les valeurs "unknown" et "not-applicable" ne sont pas des grades renseignés et sont exclues)
+
+            3- Le top 10 des marques (chaînes vides exclues) :
+                U               16 107
+                Carrefour       15 126
+                Auchan           8 200
+                Marque Repère    7 674
+                Casino           6 465
+                Nestlé           5 944
+                Leader Price     5 694
+                Lidl             4 676
+                Monoprix         4 481
+                Cora             4 119
+
+            4- Le taux de manquants en énergie, en sucre et en sel est : 27,54 % , 32,45 % , 37,25 %
+            (l'énergie est comptée renseignée si elle apparaît sous n'importe lequel de ses noms
+            dans l'export : energy-kcal, energy ou energy-kj)
+
+            5- Parmi les données explorées, deux éléments ressortent comme les plus problématiques :
+            - le champ "marques" contient un grand nombre de valeurs vides comptées à tort comme
+                une marque à part entière (plus de 55 000 produits dans les données brutes) — un piège
+                silencieux, puisque le résultat a l'air correct tant qu'on ne vérifie pas le contenu
+                de la première ligne du classement
+            - le sel reste le nutriment le moins bien renseigné des trois (37,25 % de manquants),
+                suivi du sucre (32,45 %) puis de l'énergie (27,54 %)
     ## Décidé : utiliser le format parquet
     ## Bloqué: chargement des produits français
 
