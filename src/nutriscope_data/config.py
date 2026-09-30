@@ -7,6 +7,43 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
 
+COLUMNS: list[str] = [
+    "code",
+    "product_name",
+    "brands_tags",
+    "categories_tags",
+    "labels_tags",
+    "countries_tags",
+    "image_url",
+    "image_small_url",
+    "ingredients_text",
+    "ingredients_tags",
+    "ingredients_analysis_tags",
+    "allergens_en",
+    "traces_tags",
+    "additives_tags",
+    "nutriscore_score",
+    "nutriscore_grade",
+    "nova_group",
+    "pnns_groups_1",
+    "pnns_groups_2",
+    "food_groups",
+    "food_groups_tags",
+    "food_groups_en",
+    "completeness",
+    "energy-kj_100g",
+    "energy-kcal_100g",
+    "energy_100g",
+    "fat_100g",
+    "saturated-fat_100g",
+    "carbohydrates_100g",
+    "sugars_100g",
+    "fiber_100g",
+    "proteins_100g",
+    "salt_100g",
+    "sodium_100g",
+    "fruits-vegetables-legumes_100g",
+]
 
 @dataclass(frozen=True)
 class Dataset:
