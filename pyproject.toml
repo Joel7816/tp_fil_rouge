@@ -13,11 +13,13 @@ dependencies = [
     "imbalanced-learn",
     "xgboost",
     "lightgbm",
+    "tqdm",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "optuna",
 ]
 
 [project.scripts]
