@@ -5,7 +5,9 @@ from pathlib import Path
 
 # config.py -> nutriscope/ -> src/ -> racine du projet
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DATA_DIR = PROJECT_ROOT / "data"
+DATA_DIR = PROJECT_ROOT / 'data'
+CLEAN_DIR = DATA_DIR / 'clean'
+ML_SAMPLE = CLEAN_DIR / "nutriscope_ml_sample.parquet"
 
 COMPLETENESS_NUTRIENTS: list[str] = [
     "energy-kcal_100g", "fat_100g", "saturated-fat_100g", "sugars_100g",

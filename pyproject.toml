@@ -2,7 +2,23 @@
 name = "nutriscope"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = ["pandas>=3,<4", "pyarrow", "requests", "tqdm", "matplotlib"]
+dependencies = [
+    "pandas>=3,<4",
+    "pyarrow",
+    "requests",
+    "tqdm",
+    "matplotlib",
+    "numpy",
+    "scikit-learn",
+    "imbalanced-learn",
+    "xgboost",
+    "lightgbm",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
 
 [project.scripts]
 nutriscope = "nutriscope.cli:main"
