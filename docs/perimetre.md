@@ -5,7 +5,7 @@
 Les données proviennent d'[Open Food Facts](https://world.openfoodfacts.org). La structure de la
 base est distribuée sous licence **ODbL**, le contenu individuel sous **Database Contents License
 (DbCL) 1.0**, et les images sous **CC BY-SA**. Ce document et les jeux de données dérivés
-(`produits_france.parquet`) créditent Open Food Facts comme source et sont repartagés sous les
+(`food.csv.gz`) créditent Open Food Facts comme source et sont repartagés sous les
 mêmes conditions en cas de diffusion publique.
 
 ## 1. Périmètre retenu
