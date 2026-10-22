@@ -7,7 +7,7 @@ import pyarrow as pa
 import pyarrow.compute as pc
 import pyarrow.parquet as pq
 
-from nutriscope_data.loading import FRANCE_PARQUET
+from nutriscope.loading import FRANCE_PARQUET
 
 # Colonnes nutritionnelles en g/100 g dont la valeur ne peut pas dépasser 100
 GRAMS_PER_100G_COLUMNS: tuple[str, ...] = (

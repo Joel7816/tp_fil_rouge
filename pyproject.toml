@@ -1,11 +1,11 @@
 [project]
-name = "nutriscope_data"
+name = "nutriscope"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = ["pandas>=3,<4", "pyarrow", "requests", "tqdm", "matplotlib"]
 
 [project.scripts]
-nutriscope = "nutriscope_data.cli:main"
+nutriscope = "nutriscope.cli:main"
 
 [build-system]
 requires = ["setuptools>=68"]

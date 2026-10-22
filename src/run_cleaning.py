@@ -18,8 +18,8 @@ import sys
 
 import pandas as pd
 
-from nutriscope_data import config
-from nutriscope_data.cleaning import clean, merge_reports
+from nutriscope import config
+from nutriscope.cleaning import clean, merge_reports
 
 DEFAULT_INPUT = config.DATA_DIR / "echantillon_france.csv"
 DEFAULT_OUTPUT_CSV = config.DATA_DIR / "clean_data.csv"

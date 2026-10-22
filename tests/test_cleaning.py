@@ -1,4 +1,4 @@
-"""Tests unitaires des règles de nettoyage (``nutriscope_data.cleaning``).
+"""Tests unitaires des règles de nettoyage (``nutriscope.cleaning``).
 
 Lancer depuis la racine du projet, .venv activé :
     pytest -v
@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from nutriscope_data.cleaning import (
+from nutriscope.cleaning import (
     add_missing_flag,
     bound_energy,
     bound_nutrients,

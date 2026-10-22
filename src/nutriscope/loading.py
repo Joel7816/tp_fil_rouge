@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 import pyarrow.parquet as pq
 
-from nutriscope_data.config import DATA_DIR
+from nutriscope.config import DATA_DIR
 
 FRANCE_PARQUET = DATA_DIR / "france" / "food_france.parquet"
 
